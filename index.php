@@ -7,9 +7,9 @@
  * @version 180428
  */
 // Non-web tree base directory for this application.
-define('NON_WEB_BASE_DIR', 'H:/ArtHub/');
-define('APP_NON_WEB_BASE_DIR', NON_WEB_BASE_DIR . 'ArtHub/');
-include_once(APP_NON_WEB_BASE_DIR . 'includes/guitarShopIncludes.php');
+define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');
+define('APP_NON_WEB_BASE_DIR', NON_WEB_BASE_DIR . 'artHub/');
+include_once(APP_NON_WEB_BASE_DIR . 'includes/artHubIncludes.php');
 
 // Sanitze the routing input from links and forms - set default values if
 // missing.
