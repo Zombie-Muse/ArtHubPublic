@@ -1,0 +1,24 @@
+@font-face {
+    font-family: sans-bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: sans-reg;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: mono-bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: mono-reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: pt-serif;
+    src: url(../fonts/PT_Serif-Web-Italic.ttf);
+}
