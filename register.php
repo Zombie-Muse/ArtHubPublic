@@ -356,12 +356,11 @@
                         <div class="contact-form col-md-8 col-xs-12">
                             <h1>Sign Up</h1>
                             <p>Register for an account to start uploading your art right away!</p>
-                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                            <form action="." method="get">
                                 <div class="con-item col-xs-12">
                                     <label>First Name</label>
                                     <input type="text" name="f_name" aria-required="true">
                                 </div>
-                                <!-- end con-item -->
                                 <div class="con-item col-xs-12">
                                     <label>Last Name</label>
                                     <input type="text" name="l_name" aria-required="true">
@@ -373,20 +372,22 @@
                                 </div>
                                 <!-- end con-item -->
                                 <div class="con-item col-xs-12">
-                                    <label>Password</label>
-                                    <input type="text" name="password" aria-required="true">
-                                </div>
-                                <!-- end con-item -->
-                                <div class="con-item col-xs-12">
                                     <label>Phone</label>
                                     <input type="text" name="phone" placeholder="xxx-xxx-xxxx" aria-required="true">
                                 </div>
                                 <!-- end con-item -->
-                                <!-- <div class="con-item col-xs-12">
-                                    <textarea placeholder="Message"></textarea>
-                                </div> -->
+                                <div class="con-item col-xs-12">
+                                    <label>Password</label><br />
+                                    <input type="password" name="password" aria-required="true">
+                                </div>
                                 <!-- end con-item -->
                                 <div class="con-item col-xs-12">
+                                    <label>Confirm Password</label><br />
+                                    <input type="password" name="confirmPassword" aria-required="true">
+                                </div>
+                                <!-- end con-item -->
+                                <div class="con-item col-xs-12">
+                                    <label>&nbsp;</label>
                                     <button type="submit" name="register_user">
                                         <i class="fa fa-paper-plane"></i> Sign Up
                                     </button>
