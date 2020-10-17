@@ -52,6 +52,13 @@ switch ($ctlr) {
                 $action = 'loginGET';
             }
         }
+        if ($action === 'register') {
+            if ($post) {
+                $action = 'registerPOST';
+            } else {
+                $action = 'registerGET';
+            }
+        }
         if ($action === 'addProduct') {
             if ($post) {
                 $action = 'addEditProduct';
