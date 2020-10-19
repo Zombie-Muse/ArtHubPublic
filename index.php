@@ -4,7 +4,7 @@
  * Request broker ArtHub Application.
  * 
  * @author jam
- * @version 180428
+ * @version 201018
  */
 // Non-web tree base directory for this application.
 define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');
