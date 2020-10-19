@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Request broker GuitarShop Application.
+ * Request broker ArtHub Application.
  * 
  * @author jam
  * @version 180428
@@ -52,18 +52,18 @@ switch ($ctlr) {
                 $action = 'loginGET';
             }
         }
-        if ($action === 'register') {
-            if ($post) {
-                $action = 'registerPOST';
-            } else {
-                $action = 'registerGET';
-            }
-        }
         if ($action === 'addProduct') {
             if ($post) {
                 $action = 'addEditProduct';
             } else {
                 $action = 'showAddProduct';
+            }
+        }
+        if ($action === 'register') {
+            if ($post) {
+                $action = 'registerPOST';
+            } else {
+                $action = 'registerGET';
             }
         }
         break;
@@ -74,7 +74,14 @@ switch ($ctlr) {
         $controller = new CartController();
         break;
     case 'register':
-        $controller = new UserController();
+        $controller = new AdminController();
+        if ($action === 'register') {
+            if ($post) {
+                $action = 'registerPOST';
+            } else {
+                $action = 'registerGET';
+            }
+        }
         break;
     default:
         $controller = new DefaultController();
