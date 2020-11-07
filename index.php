@@ -10,7 +10,7 @@
 define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');
 define('APP_NON_WEB_BASE_DIR', NON_WEB_BASE_DIR . 'artHub/');
 include_once(APP_NON_WEB_BASE_DIR . 'includes/artHubIncludes.php');
-session_start();
+session_start();        //http is "stateless" (can't remember who you are)
 
 // Sanitze the routing input from links and forms - set default values if
 // missing.
@@ -86,16 +86,6 @@ switch ($ctlr) {
         break;
     case 'cart':
         $controller = new CartController();
-        break;
-    case 'register':
-        $controller = new AdminController();
-        if ($action === 'register') {
-            if ($post) {
-                $action = 'registerPOST';
-            } else {
-                $action = 'registerGET';
-            }
-        }
         break;
     default:
         $controller = new DefaultController();
