@@ -80,12 +80,17 @@ switch ($ctlr) {
                 $action = 'registerGET';
             }
         }
+        
         break;
     case 'home':
         $controller = new HomeController();
         break;
     case 'cart':
         $controller = new CartController();
+        break;
+    case 'gallery':
+        $controller = new GalleryController();          //Let's see if this actually works. Needs to navigate to the gallery page
+        $action = 'viewGallery'; 
         break;
     default:
         $controller = new DefaultController();
