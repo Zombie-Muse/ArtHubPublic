@@ -83,6 +83,10 @@ switch ($ctlr) {
         if ($action === 'logout') {
             $action = 'logout';
         }
+        if ($action === 'portfolio') {
+            $action = 'showPortfolio';
+        }
+        
         
         break;
     case 'home':
