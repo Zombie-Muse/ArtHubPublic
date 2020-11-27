@@ -1825,7 +1825,7 @@ p {
 }
 
 .counter ul li span {
-    color: #1145d1;
+    color: #385723;
     font-family: mono-bold;
     position: relative;
     font-size: 14px;
@@ -2203,7 +2203,7 @@ p {
 .purchase-item {
     padding: 30px 0;
     text-align: center;
-    background-color: #1145d1;
+    background-color: #385723;
 }
 
 .purchase-item p {
@@ -5649,7 +5649,7 @@ div.pp_overlay {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #1145d1;
+    background-color: #385723;
     bottom: 0;
 }
 
@@ -5688,7 +5688,7 @@ div.pp_overlay {
 .contact-box .contact-data .contact-form .con-item input:focus,
 .contact-box .contact-data .contact-form .con-item textarea:focus {
     background-color: #fff;
-    border-color: #1145d1;
+    border-color: #385723;
     -webkit-transition: all .3s;
     transition: all .3s;
 }
@@ -5724,7 +5724,7 @@ div.pp_overlay {
 }
 
 .contact-box .contact-data .contact-form button:hover {
-    background-color: #1145d1;
+    background-color: #385723;
     color: #fff;
     -webkit-transition: all .3s;
     transition: all .3s;

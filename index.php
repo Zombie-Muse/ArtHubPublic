@@ -80,6 +80,9 @@ switch ($ctlr) {
                 $action = 'registerGET';
             }
         }
+        if ($action === 'logout') {
+            $action = 'logout';
+        }
         
         break;
     case 'home':
