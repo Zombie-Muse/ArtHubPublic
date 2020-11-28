@@ -11,6 +11,8 @@ define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');
 define('APP_NON_WEB_BASE_DIR', NON_WEB_BASE_DIR . 'artHub/');
 include_once(APP_NON_WEB_BASE_DIR . 'includes/artHubIncludes.php');
 session_start();        //http is "stateless" (can't remember who you are)
+var_dump($_SESSION);
+// session_status();
 
 // Sanitze the routing input from links and forms - set default values if
 // missing.
@@ -83,10 +85,6 @@ switch ($ctlr) {
         if ($action === 'logout') {
             $action = 'logout';
         }
-        if ($action === 'portfolio') {
-            $action = 'showPortfolio';
-        }
-        
         
         break;
     case 'home':
@@ -99,6 +97,9 @@ switch ($ctlr) {
         $controller = new GalleryController();          //Let's see if this actually works. Needs to navigate to the gallery page
         $action = 'viewGallery'; 
         break;
+    case 'portfolio':
+        $controller = new PortfolioController();
+        $action = 'showPortfolio';
     default:
         $controller = new DefaultController();
 }
