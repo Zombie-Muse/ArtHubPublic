@@ -7,7 +7,7 @@
  * @version 201018
  */
 // Non-web tree base directory for this application.
-define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');
+define('NON_WEB_BASE_DIR', 'H:/ArtHub/ArtHubPrivate/');    //GoDaddy site dir '/home/qwz883i7kugv/cis4270/'
 define('APP_NON_WEB_BASE_DIR', NON_WEB_BASE_DIR . 'artHub/');
 include_once(APP_NON_WEB_BASE_DIR . 'includes/artHubIncludes.php');
 session_start();        //http is "stateless" (can't remember who you are)
@@ -94,7 +94,7 @@ switch ($ctlr) {
         $controller = new CartController();
         break;
     case 'gallery':
-        $controller = new GalleryController();          //Let's see if this actually works. Needs to navigate to the gallery page
+        $controller = new GalleryController();          //Used to navigate to gallery
         $action = 'viewGallery'; 
         break;
     case 'portfolio':
